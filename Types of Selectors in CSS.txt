@@ -1,0 +1,35 @@
+/* Type Selector */
+h1,h2,p{
+    color: orange;
+}
+h3{
+    color: aquamarine !important;
+}
+/* Universal Selector */
+*{
+    color: blue;
+}
+/* Id Selector */
+#Softdev{
+    color: green;
+}
+/* Class Selector */
+.greenText{
+    color: green;
+}
+/* Child Selector*/
+div>p{
+    color: greenyellow;
+}
+/* Descendent Selector */
+div a{
+    color: blueviolet;
+}
+/* Sibling Selector*/
+h1~h4{
+    color: aqua;
+}
+/* Adjacent Sibling Selector*/
+h1+h2{
+    color: navy;
+}

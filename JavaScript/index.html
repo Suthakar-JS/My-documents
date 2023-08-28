@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="message"></h1>
+    <script>
+        // console.log('hello')
+        // console.log('dhanush')
+        // alert("hi")
+        // let name = prompt("Whats your name?")
+        // console.log('Hi', name)
+        // let message = document.getElementById("message")
+        // message.innerHTML = "Welcome to our Website"
+
+
+        // let str1 = "Strive not to be a success"
+        // let str2 = "but rather to be a value"
+        // let name = "Dhanush"
+        // let lastname ="Jeyakrishnan"
+        // console.log(name.length)
+        // console.log(str1.concat(str2))
+        // console.log(str1.toUpperCase())
+        // let arr1 = ['a','b','c','d','e']
+        // console.log(arr1.splice(2,1))
+        // console.log(arr1)
+
+        // let cost = [35,234,12,34,54,123]
+        // let cartTotal = cost.reduce((total,el) => total + el)
+        // console.log(cartTotal)
+        // console.log(typeof cartTotal)
+
+
+        arr2d = [
+            ["a","b","c"],
+            ["c","d","f"],
+            ["d","f","g"],
+        ];
+        let arr1d = arr2d.flat();
+        let object = {};
+        for (const iterator of arr1d) {                 
+            if (object[iterator] != null)
+            object[iterator]++
+            else 
+            object[iterator] = 1
+            // console.log(object[iterator]) 
+        }
+        console.log(object)
+
+    </script>
+</body>
+</html>

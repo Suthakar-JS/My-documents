@@ -1,0 +1,11 @@
+h3{
+    color: rgb(120, 120, 120);
+    color: rgba(120, 120, 120, 0.45);
+    color: hsl(45, 75, 65);
+    color: hsla(45, 75, 65, 0.30);
+    background-color: rgb(56, 62, 88);
+}
+
+body{
+    background-color: white;
+}

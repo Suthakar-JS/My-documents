@@ -1,0 +1,14 @@
+RTAUTO-43290 :
+------------
+Devices which are not signed in to Spectrum app are picked for Execution
+
+At step-3 : Verification of Spectrum app launch
+It searching for Information: URLChanged:.*\"url\": \"https://tvsdk.xclass.spectrum.net/index.html.*loaded\": true
+
+In Hisense device - we getting response as follows,
+[5498009][A0:62:FB:8E:8B:75][TC-CHARTER-APP-1000]2023 Aug 11 04:06:12.661100 hisense-a6gp /usr/bin/WPEFramework[6146]: [Fri, 11 Aug 2023 00:06:12 ]:[WebKitBrowser.cpp:325]: Information: URLChanged: { "url": "https://tvsdk.xclass.spectrum.net/index.html?lmt=0&us_privacy=1-N-#launchpoint=&query=&assetId=&assetType=&entityId=&sectionName=&contentUrl=", "loaded": true }
+
+In Element device - we getting null response even app launch was successful. In latest execution it working fine
+
+
+ 

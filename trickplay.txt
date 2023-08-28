@@ -1,0 +1,10 @@
+trickplay :
+	having two methods
+1. performAppContentTrickPlayAndVerify(Settop settop, ECatsTapApi tapEnv, String appName,
+	    String freezeDuration, AVMonitor catsMonitor) -> for all platforms
+
+2. performNetflixContentTrickPlayAndVerify(Settop settop, ECatsTapApi tapEnv,
+	    String freezeDuration, AVMonitor catsMonitor) -> for all platforms
+
+	Pause,play,ff,ff,ff,play,rew,rew,play,pause
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="signupresult.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <h3>About Taylor Swift</h3>
+            <p><span>Taylor Alison Swift is an American singer-songwriter.</span>
+                Recognized for her songwriting, musical versatility, artistic reinventions, and influence on the music industry, she is a prominent cultural figure of the 21st century.</p>
+        </div>
+        <div>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username" value="suthakar">
+        </div>
+        <div>
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" value="">
+        </div>
+        <div>
+            <label for="yearofbirth">Year Of Birth</label>
+            <input type="number" name="yearofbirth" id="yearofbirth" min="1900" max="2025" minlength="4" step="5">
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" min="1900-01-01">
+        </div>
+        <div>
+            <input type="checkbox" name="smsalert" id="smsalert">
+            <label for="smsalert">SMS Alert</label>
+        </div>
+        <div>
+            <input type="checkbox" name="emailalert" id="emailalert">
+            <label for="emailalert">Email Alert</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="file">Resume</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <select name="state" id="state">
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="AP">AP</option>
+                <option value="Kerala" label="Kerala"></option>
+            </select>
+        </div>
+        <div>
+            <label for="about">About</label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <!-- <button type="submit">Sign Up</button> -->
+        <input type="image" src="C:\VS Code\HTML\images\25432-3-submit-button-file.png" width="80">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

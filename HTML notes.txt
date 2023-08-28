@@ -1,0 +1,408 @@
+HTML tags :
+---------
+p - paragraph tag
+h1 - heading tag (The font size of the heading is large in size)
+     we also having h2,h3... tags as well, only the size of the font gets differs.
+
+Order of tags :
+-------------
+	1) <!DOCTYPE html> -> this line should present at first line of code
+	The above line says that the code which we going to write is comes under HTMLv5 (version 5). To convey this to browser, we should use the above mentioned line.
+	2) <html> tag 
+	3) <head> tag -> Inside this head tag we can provide some additional informations
+	4) <title> tag -> It's one important tag under head tag. It showing the given title inside the tag at the browser's tab.
+	5) <body> tag -> Under this body tag only we going to mention the <p> tag, <h1> tag etc
+This is the proper arrangement of HTML tags. 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+! - By simply providing this symbol, it shows Emmet abbreviation.
+	Emment helps us to generates code snippets based on input commands from user.
+	ie, by clicking this, it'll generate the basic/proper tag structure by default as follows,
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+
+	</head>
+	<body>
+	
+	</body>
+	</html>
+
+LocalHost -> It means when our own system/computer acts like a server.
+	At first, our index.html file is present in our system only. So, in website it showing like http://127.0.0.1:5500/index.html
+here, 5500 -> is known as port. -> It's only visible for us
+
+If all the users needs to access the website means, we should buy any Domain name. For ex: facebook.com, twitter.com etc
+No one can buy the same name one another time.
+	After that we have to buy any unique server for us / shared servers via web hosting companies.
+	Then we need upload our file into that server and after completes some extra mappings, the website will be accessable to all users.
+
+<b> -> used to BOLD the entered text
+<i> -> used to ITALIC the entered text
+<sup> -> super script -> ex: <p>a<sup>2</sup></p> => output will be a2(square)
+<sub> -> sub script -> h2o => 2 goes under h 
+
+White space collapsing : (Line Break) 
+	ie, It consider only one space if we provide huge number of spaces under a paragraph tag!!
+Ex: <p> hello,<br />
+	I'm a software tester
+    </p>	
+=> output for the above example will be, hello, I'm a software tester
+	Here, <br /> tag is coming in picture. It means line break. It'll break the hello at first line itself.
+after user the <br />, the output will be, 
+o/p :	hello
+	I'm a software tester
+
+<br /> tag known as Empty Tag. We just using the End tag. there is no start tag (<br>), so that's why!! 
+<hr /> also an Empty tag used to print one Horizontal Line.
+
+<!-- This tag used to put Comments --> : The text is commented, ie. the browser doesn't consider this line as code.
+
+
+SEMANTIC TAGS : Used to provide additional informations
+-------------
+<strong> tag -> Prints the text as bold but it doesn't meant to be bold the text. It conveys the information in a strict manner.
+		Ex: <strong>Consult your Doctor</strong>
+<em> tag -> emphasize tag -> Prints the text as Italic way but it also doesn't meant to be italic the text. It conveys some extra infos as well.
+		Ex: <em>Do not</em> try this at home
+<q> tag -> quote tag -> the given text surrounds by double quotes. 
+<blockquote> tag -> It's used when a long quotes we giving
+<abbr> tag -> Structurally there is no change, by using this tag we can pass that the text is an Abbreviation.
+<cite> tag -> It used to provide the reference, like from this book the contents were collected.
+<dfn> tag -> Definition tag
+<address> tag -> Used to mention contact infos
+<del> tag -> used to strike out the given text under this tag. Ex: <p><del>$599</del></p> => It strike the $599 text as giving as output.
+<ins> tag -> Insert tag -> The text is comes along with underline.
+<s> tag -> Used to convey the info like the mention text is not a valid one.It also strikes out the text as del tag does.
+
+LISTS IN HTML :
+-------------
+	1) Ordered List -> Numbers are used for list -> <ol> tag
+	2) Unordered List -> Bullets/some other designs are used for list -> <ul> tag
+	3) Definition List
+
+<ol> tag -> 
+<ul> tag -> 
+<li> tag -> Used to mention the list items
+	<ol type="a"> => type is known as Attribute, which is used to modify the ordered list in different manner like alphabetic/roman letters
+<dl> tag -> Definition List
+	<dt> tag -> definition term in Description List
+	<dd> tag -> Definition/Description Of A Term in Description List
+Refer the screenshot captured in mobile for examples.
+
+LINKS IN HTML :
+-------------
+	Created a new folder called Restaurant in VSCode location. -> Create a new file in VS and name it as index.html 
+Example:
+-------
+    <body>
+    <h1>Spicy Hut</h1>
+    <a href="https://www.swiggy.com/" target="_blank">Order Online</a>
+    <h3>Dine In and Take out</h3>
+    <h3>Catering Services</h3>
+    <h3>Corporate Events</h3>
+</body>
+
+Above Example's Definition :
+--------------------------
+	h1, h3 tags for heading purposes.
+	a = anchor tag which helps to mention the hyperlinks, here Order Online is the hyperlink. When we go near to this hyperlinks, the cursor will automatically convert as clickable one.
+	If we provide any content inside anchor tag, it'll consider that as hyperlink. We can able to click this hyperlinks but it'll not land to any particular page. Because, we didn't denoted it yet.
+	So for that, 'href'(Hypertext REFerence) tag is used. This is one attribute which comes under anchor tag. Purpose of this tag is, we need to denote the link which the clickable hyperlink should land over. **** It'll load the mentioned page in a same page only ****
+	We having another attribute called 'target', if we provided "target=_blank" then it'll load the mentioned page into next tab.
+
+Naviagtion Bars -> Home, 
+	Absolute URL -> It needs a complete URL, because it navigate into some external website
+	Relative URL -> It doesn't need a complete URL because we just going to navigate inside our webside only.
+Always home page should be named as index.html
+Let create two more files called menu.html & about.html.
+And create a link of it in index.html, it'll land at the same tab.
+It'll work because we have only one folder & under this folder only we having the same mentioned files as well. So that it easily fould files.
+
+Ex:
+    <h1>Spicy Hut</h1>
+    <a href="/index.html">Home</a>
+here, '/' represents to go to the root folder
+	'../' represents to go one folder up likely.
+
+To send a mail via anchor tag :
+	Solution : <a href="mailTo:suthakarjs16@gmail.com">Send a mail</a>
+
+To reach out particular content in our website :
+	solution : <a href="menu.html#dessert">Check our new dessert</a>
+here, menu.html is a hyperlink of menu and dessert is a id attribute's value => "id=dessert". Mentioning id name it'll land over the content when we click on the Check our new dessert hyperlink
+================================================================================================================================================
+
+IMAGES IN HTML : 
+--------------
+	It's a good practice to always keep a separate folder for images.
+	It's an open tag. ie, it doesn't have a separate opening & closing tags as other tags have. 
+	It having two attributes. 
+1. src -> have to provide complete image file path from where to load the image
+2. alt -> alternate text, which should describe a clear explanation if the image doesn't uploaded as expected. And it also helps the blind 	  peoples to understand what is displayed in the screen via screen reader. It reads the content in alt loudly.
+	  In Search Engine also it considers the content which placed over in the 'alt' attribute. Better to provide clear description about it.
+	  If there is nothing to specify about the image then also don't elimate the attribute. Just put empty like "alt="
+3. title -> It shows what we mentioning as a value of this attribute when we hover the mouse over the image.
+	***** Main thing about image is, we shouldn't use any other website's images when we launch a website. It'll leads to an copyright issue. Some websites are providing images with copyrights / we can use our own images only. And should have copyrights for our own images too while we launching a website *****
+4. width -> It decides the width size of the given image. have to provide the value in pixels
+5. height -> It decides the height of the given image. have to provide the value in pixels
+6. align -> If the image & some paragraph related to the image is needs to show in same alighnment, then this attribute we can use.
+	    In HTMLv5, this attribute was deprecated. We doing this alighnment process via CSS. It's a better standard.
+Different align's attribute values are -> "align=left", "align=right", "align=top", "align=bottom"
+
+Image formats :
+-------------
+	If a image consists different shades of colours, then it's preferable to use JPEG format 
+	If a image consists a normal shades of colours, then PNG image we can use.
+	We can also attach GIF images also by using 'img' tag
+	Always taking care of image's pixel & resolution to pick a clear one based on our requirement
+	Image size should be optimal.
+
+'fig' caption :
+-------------
+	We having <figure> tag, inside this only we use the 'img' tag.
+	To provide a caption about the image, <figcaption> tag is used.
+Example : 
+    <figure>
+        <img src="C:\VS Code\HTML\Images\Cat in Hisense.png" alt="Showing Cat image with sad face" title="Tommy" width="600" height="300">
+        <br>
+        <figcaption>fig : Crying Tommy</figcaption>
+
+    </figure>	
+================================================================================================================================================
+
+RESPONSIVE DESIGN :
+-----------------
+	It's nothing but a website which can adjust it's design by reducing/increasing the size of the tab also.
+	By using bootstrap, it's easy to provide a Responsive Design.
+	If the webpage showing Horizantal scroling, then it also means that the page is not fulfills the Responsive Design. It doesn't fit.
+================================================================================================================================================
+
+Tables in HTML :
+--------------
+<table border="2" bgcolor="#2ffffe" cellpadding="5"cellspacing="5">
+        <thead>
+            <tr>
+                <th>Dish Type</th>
+                <th>Dish Name</th>
+                <th>Price Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Starters</td>
+                <td>Samosa</td>
+                <td>Rs.28/-</td>
+            </tr>
+            <tr>
+                <td>Veg Roll</td>
+                <td>Rs.30/-</td>
+            </tr>
+            <tr>
+                <td>Puff</td>
+                <td>Rs.20/-</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+
+Output :
+------
+Dish Type	Dish Name	Price Detail
+		Samosa		Rs.28/-
+Starters	Veg Roll	Rs.30/-
+		Puff		Rs.20/-
+
+Attributes :
+----------
+border -> Used to put table's border line. It was deprecated. Better to use this via CSS
+bgcolor -> For every colour there is separate color codes (RGB color codes). This too deprecated.
+cellpadding -> Spacing between the text and it's border of one cell
+cellspacing -> Spacing between border of two cells
+================================================================================================================================================
+
+FORMS IN HTML :
+-------------
+<input> tag doesn't have a closing tag -> It'll create one box
+<label> tag used to provide a Name of the Input box (Ex: User Name/Password/Father's Name ...)
+<div> -> to divide -> tag used to grouping purpose. Whatever tags we mentioning inside this 'div' tag it means those are comes under one group.
+		      This tag doesn't affect anything in code.
+
+Example : 
+-------
+    <form action="signupresult.html" method="GET">
+        <div>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username">
+        </div>
+        <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+
+In 'for' tag, we are mentioning the 'input' field's value of 'id' attribute 
+GET response -> file://C:/VS%20Code/HTML/signupresult.html?username=abcd&password=efgh => After the '?' symbol those are called Query Params!!
+
+Purpose of 'placeholder' tag : Instead of label, we can show that description inside the input box
+----------------------------
+<input type="text" name="username" id="username" placeholder="UserName">
+<input type="password" name="password" id="password" placeholder="Password">
+
+In 'input' tag, the name&value pair is going to back end to update the datas in DataBase. So, this pair is always important to mention.
+The values whatever we entering in input box, that is reflecting into as attribute value of the attribute name of 'value'.
+
+* size
+* maxlength
+* required -> If we try to submit without filling all the required fields it doesn't allow user to submit
+* minlength -> 
+
+Example :   <label for="yearofbirth">Year Of Birth</label>
+            <input type="number" name="yearofbirth" id="yearofbirth" min="1900" max="2025" minlength="4" step="5">
+
+	    <label for="date">Date</label>
+            <input type="date" name="date" id="date" min="1900-01-01">
+
+	    <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email">
+
+	    <button type="reset">Reset</button>
+
+Different 'type' values for 'input' tag :
+---------------------------------------------
+1) text
+2) password
+3) number
+4) date
+5) url
+6) search
+7) email
+8) checkbox
+9) tel
+10) color
+11) hidden
+12) file
+13) image
+14) radio -> We must keep same 'name' attribute. So that, it'll understand like these same name are comes under same group.
+	    That's why user can click any one Radio Button. The 'name' attribute is helps to do it.
+	Problem statement -> In backend/server it retrieving the values from 'name' attribute. But in Radio button all the 'name' attribute should be mention same to group themselves as Radio buttons. Here the problem is, I choosed one, but how the server will get my choice? 
+	Solution is ->  Always needs to provide 'value' attribute too for Radio Buttons. It helps to get choosed value at backend/server.
+
+Example : 
+-------
+	<div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+GET method response : file://C:/VS%20Code/HTML/signupresult.html?username=suthakar&email=ahbdsa%40gmail.com&password=asdh&yearofbirth=1900&date=2023-07-06&smsalert=on&emailalert=on&gender=male&about=
+================================================================================================================================================
+
+Drop-Down in HTML :
+-----------------
+        <div>
+            <select name="state" id="state" multiple>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="AP">AP</option>
+                <option value="Kerala" label="Kerala"></option>
+            </select>
+        </div>
+================================================================================================================================================
+
+File Upload :
+-----------
+	<form action="signupresult.html" method="GET" enctype="multipart/form-data">
+	<div>
+            <label for="file">Resume</label>
+            <input type="file" name="file" id="file">
+        </div>
+This file could be a PDF/Video/Image whatever. 
+'enctype' attribute is important while performing file operation because the file could be different in size time to time. So, always it'll not upload in a single shot from UI to server. that's why this 'enctype' attribute helps to tells the server and the server could consider the file as multipart and it'll handle it accordingly. 
+================================================================================================================================================
+Example to put image for Submit instaed of as Button :
+----------------------------------------------------
+<input type="image" src="C:\VS Code\HTML\images\25432-3-submit-button-file.png" width="80">
+	It'll show the submit as an image and also act as a button. ie, clickable one!!
+================================================================================================================================================
+
+
+Grouping & Meta Tags in HTML : 
+----------------------------
+'class' attribute :
+	* It helps when we want to target a lot of elements as a group, in that scenario we can mention it in 'class' attribute.
+	* With the help of this 'class' attribute value we can easily target that particular group via CSS.
+	* We can also provide multiple names as an attribute value by comma separating.
+
+'span' attribute :
+Example:
+	<h3>About Taylor Swift</h3>
+            <p><span>Taylor Alison Swift is an American singer-songwriter.</span>
+                Recognized for her songwriting, musical versatility, artistic reinventions, and influence on the music industry, she is a prominent cultural figure of the 21st century.</p>
+	In the above Example, the all content which I mentioned inside a <p> & <span> tags were showing it as a same paragraph only.
+But when we want to do some modification of a same paragraph/definition contents then we can mention those words/sentences/string in the 'span' tag. Via CSS we can easily do those modifications.
+================================================================================================================================================
+
+In HTML, we can easily catagorize all tags under these two category,
+	1) Block Elements -> All heading tags, p, div, li, ul 
+	2) Inline Elements -> a, img, span
+
+In HTML we also having some Escape Sequences/symbols like &copy -> it's used to include copyright symbol 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+'iframe' tag : 
+	It's not a grouping tag and it also not comes under Meta tag.
+	We can embed other pages in our current page by using the 'iframe' tag
+Ex: Maps
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+'meta' tag : -> mainly used for search engine
+	charset="UTF-8" -> It's a encoding standard
+Search "List of Meta Tags in HTML" in google and refer it for more!!
+
+================================================================================================================================================
+
+
+AUDIO & VIDEO IN HTML :
+---------------------
+'audio' tag -> By using this we can attach an audio file via even HTML itself.
+	Some important options are there,
+	--------------------------------
+	1) controls -> It's a mandatory one. After mentioning this 'controls' then only browser will show the audio file in browser.
+	2) autoplay -> If we want to autoplay that audio file after the page loaded then this option will helps
+	3) loop -> If we want to play the audio in loop when we start to play it, then it'll help
+
+	Attributes are,
+	--------------
+	1) src -> to provide the file path of the audio file
+	2) preload -> In this attribute we having three different attributeValues 
+		a) none : It doesn't load the audio until we click to play even the page loaded completely
+		b) auto : It loads the audio file too completely along with the webpage loads
+		c) metadata : At first it collects the basic info's (like audio's duration) related to that audio. It'll loads the audio file completely when the audio file is clicks to play.  
+	**** Meta data will make sense when the 'auto' option is not included **** 
+	**** We have to give the 'source' tag in between the 'audio' tag.
+'source' tag: 
+------------
+	* If we want to provide mulitple 'src' attribute, then we can go with 'source' tag.
+	* It not having the ending tag for it.
+Two kind of audio file a browser a find,
+	1) mp3 -> safari 5+, chrome 6+, IE9
+	2) ogg -> Firefox 3.6, Chrome 6, IE9
+Here, we should give two different audio files under 'src' attribute name to choose a correct file according to the browser.
+
+'video' tag -> The same was also applicable which already seen for 'audio' tag.
+	Apart from that we have more tags for 'video'
+	1) poster -> If we want to change the thumbnail of the video, we can give a link of that at 'poster'
+	2) muted -> At initial time while playing the video, the content will be in mute state.
+	3) In 'source' tag => we having some attributes as follow,
+		* type -> It's always a best practice to mention the type of the given video format.
+
+In realtime, the size of the video, number of videos these kind of factors may get differs. If we keep those all under own own page then it'll occupy more spaces in our server. So, cost will get high to keep those files, ie. the size of the size should get increase.
+  To avoid this, we can go like YouTube. We can upload our videos in YouTube and we an embed that video into our page as well by clicking the embed button in the uploaded video file.  
+  It'll generate and gives the HTML code and we can paste it into our HTML code.
+  Similar thing we can do for audio files too.
+================================================================================================================================================
+  

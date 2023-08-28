@@ -1,0 +1,143 @@
+Main contents like which image/audio/video/text/paragraphs/heading... file needs to be in webpage, that thing we are providing via HTML.
+
+CSS -> Cascading Style Sheets
+
+1) Font
+2) Size
+3) Positioning of elements
+4) Colour
+5) border
+6) width
+7) height
+================================================================================================================================================
+
+<h2 style="color: blue; text-decoration: underline;" >Hey! Welcome to CSS</h2> -> Example of Inline CSS.
+	here, 'style' is an attribute. Inside this
+    color -> known as property
+    blue  -> property's value
+    text-decoration -> known as property
+    underline -> property's value
+Mostly in CSS, we would see like what are the properties are there and for that properties in what way the more number of values will work.
+this will be the main content!!
+
+Syntax :
+------
+	propertyName:propertyValue;
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Types of CSS :
+------------
+	1) Inline CSS
+	2) Internal CSS -> for a single page website only it make sense
+	3) External CSS
+
+Example for Internal CSS :
+------------------------
+<head>
+    <style type="text/CSS">
+        h2{
+            color: green;
+            text-decoration: underline;
+        }
+        p{
+            color: brown;
+        }   
+    </style>
+</head>
+We are not using both Inline/Internal CSS mostly.
+
+Example for External CSS :
+------------------------
+<link rel="stylesheet" href="css/style.css" type="text/css"> -> This way mostly we doing.
+	In this, we just writing/developing the styling of our website in .css file format and linking that file with the corresponding html file. It's become and we can use it for same kind of pages. 
+
+================================================================================================================================================
+
+If I gave Inline & External CSS too. Then it'll give more priority to Inline CSS content only.
+
+================================================================================================================================================
+Different types of selectors in CSS :
+-----------------------------------
+Universal Selector : *{}
+Type Selector : typeName with comma separated(If Required){}	=> Whatever tag we can provide in this
+Id Selector : #idName{}
+Class Selector : .className{}
+
+/* Type Selector */  		-> Comments -> script will not consider this
+h1,h2{
+    color: orange;
+}
+/* Universal Selector */
+*{
+    color: blue;
+}
+/* Id Selector */
+#Softdev{
+    color: green;
+}
+/* Class Selector */
+.greenText{
+    color: green;
+}
+/* Child Selector*/
+div>p{
+    color: greenyellow;
+}
+/* Descendent Selector */
+div a{
+    color: blueviolet;
+}
+/* Sibling Selector*/
+h1~h4{
+    color: aqua;
+}
+/* Adjacent Sibling Selector*/
+h1+h2{
+    color: navy;
+}
+
+h3{
+    color: aquamarine !important;	=> It'll break all the specific rule if we put !important.
+}
+================================================================================================================================================
+
+Rules : (for prioritize purpose)
+-----
+1) General Rule -> Ex: * Selector
+2) Specific Rule -> If we 
+3) Last Rule -> If both 
+
+================================================================================================================================================
+
+Colors in CSS : 
+-------------
+
+h3{
+    color: rgb(120, 120, 120);	-> rgb mean Red Green Blue -> Each value range from 0 to 255
+    color: rgba(120, 120, 120, 0.45); here a means for transparency
+    color: hsl(45, 75, 65); HSL means Hue Saturation Lightness
+    color: hsla(45, 75, 65, 0.30);
+    background-color: rgb(56, 62, 88);
+}
+
+transparency / opacity => opacity means lack of transparency-> value from 0 to 1
+HSL :
+	H -> Hue, we should represent this in Angle from 0 to 360 degree angle
+	S -> Saturation, We should represent this in percentage from 0 to 100 range
+	L -> Lightness,  We should represent this in percentage from 0 to 100 range
+	A -> helps for transparency -> Range from 0 to 1
+
+
+User can also change the background color. So if we want to prevent this then put white color as default like following,
+body{
+    background-color: white;
+}
+
+================================================================================================================================================
+
+
+
+
+
+
+
